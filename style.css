@@ -13,10 +13,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(135deg, #1E3C72, #2A5298, #FF6B6B, #FFD166);
+    background-image: linear-gradient(135deg, #0F2027, #203A43, #2C5364, #16A085);
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
 }
+
 
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
@@ -49,7 +50,7 @@ body {
 .text-control {
     padding: 0.5rem;
     margin: 2rem 0;
-    background-color: rgba(63, 70, 74, 0.5);
+    background-color: rgba(44, 83, 100, 0.5);
     color: #fff;
     border: 1px solid #fff;
     border-radius: 10px;
@@ -63,9 +64,10 @@ body {
     color: red;
 }
 
+
 .btn {
     padding: 0.8rem;
-    background-image: linear-gradient(90deg, #FF416C, #FF4B2B);
+    background-image: linear-gradient(90deg, #1E90FF, #007FFF);
     border: 1px solid transparent;
     border-radius: 10px;
     color: #fff;
@@ -76,6 +78,6 @@ body {
 
 .btn:hover {
     padding: 1rem;
-    background-image: linear-gradient(90deg, #FF4B2B, #FF416C);
+    background-image: linear-gradient(90deg, #007FFF, #1E90FF);
     transform: scale(1.05);
 }
