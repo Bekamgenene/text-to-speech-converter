@@ -13,7 +13,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(90deg, #161578, #b81055);
+    background-image: linear-gradient(135deg, #1E3C72, #2A5298, #FF6B6B, #FFD166);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .app-container {
@@ -41,7 +49,7 @@ body {
 .text-control {
     padding: 0.5rem;
     margin: 2rem 0;
-    background-color: #3f464a52;
+    background-color: rgba(63, 70, 74, 0.5);
     color: #fff;
     border: 1px solid #fff;
     border-radius: 10px;
@@ -57,14 +65,17 @@ body {
 
 .btn {
     padding: 0.8rem;
-    background-image: linear-gradient(90deg, #F4244C, #F57D4E);
+    background-image: linear-gradient(90deg, #FF416C, #FF4B2B);
     border: 1px solid transparent;
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
-    transition: all 0.25s;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
 }
 
 .btn:hover {
     padding: 1rem;
+    background-image: linear-gradient(90deg, #FF4B2B, #FF416C);
+    transform: scale(1.05);
 }
